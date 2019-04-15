@@ -49,6 +49,11 @@ func DataRoutes() []Route {
 			Handler: JSONFormated(handlers.GetCity),
 			Path:    "/city",
 		},
+		Route{
+			Method:  "GET",
+			Handler: JSONFormated(handlers.GetCost),
+			Path:    "/cost",
+		},
 	}
 	return routes
 }
